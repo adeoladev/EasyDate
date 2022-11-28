@@ -1,0 +1,16 @@
+{
+    "name": "adecool/easydate",
+    "description": "A library that can generate an accurate date format from a simple sentence.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adeola Boye",
+            "email": "adeoladev@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "files": ["easydate.php"]
+    },
+    "require": {}
+}
