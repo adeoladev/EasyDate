@@ -1,9 +1,7 @@
 <?php
-error_reporting(0);
-
 function EDate($date,$format) {
 
-    $array = str_split($date);
+    $array = explode(" ", $date);
     $format2 = str_replace( 'y', 'Y', $format );
     $array2 = str_split($format2);
     $d = $array2[0];
@@ -17,24 +15,24 @@ function EDate($date,$format) {
         return "Error. Incorrect Format";
     }
     
-    if (strpos($date, "days ago") !== false) {
+    if (strpos($date, "day ago") !== false || strpos($date, "days ago") !== false) {
     $unix = strtotime("-$num days");
 
-    } else if (strpos($date, "weeks ago") !== false) {
+    } else if (strpos($date, "week ago") !== false || strpos($date, "weeks ago") !== false) {
     $unix = strtotime("-$num weeks");
 
-    } else if (strpos($date, "months ago") !== false) {
+    } else if (strpos($date, "month ago") !== false || strpos($date, "months ago") !== false) {
     $unix = strtotime("-$num months");
 
-    } else if (strpos($date, "days from now") !== false) {
+    } else if (strpos($date, "day from now") !== false || strpos($date, "days from now") !== false) {
     $unix = strtotime("+$num days");
     $seconds = $num * 86400;
 
-    } else if (strpos($date, "weeks from now") !== false) {
+    } else if (strpos($date, "week from now") !== false || strpos($date, "weeks from now") !== false) {
     $unix = strtotime("+$num weeks");
     $seconds = $num * 604800;
 
-    } else if (strpos($date, "months from now") !== false) {
+    } else if (strpos($date, "month from now") !== false || strpos($date, "months from now") !== false) {
     $unix = strtotime("+$num months");
     $seconds = $num * 18144000;
     }
