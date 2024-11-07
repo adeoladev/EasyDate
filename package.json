@@ -1,0 +1,22 @@
+{
+  "name": "@adeoladev/easydate",
+  "version": "2.0.0",
+  "description": "A library that can generate an accurate date format from a simple sentence.",
+  "main": "easydate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adeoladev/easydate.git"
+  },
+  "keywords": [
+    "date"
+  ],
+  "author": "Adeola Boye",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adeoladev/easydate/issues"
+  },
+  "homepage": "https://github.com/adeoladev/easydate#readme"
+}

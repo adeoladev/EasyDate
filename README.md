@@ -5,28 +5,23 @@ EasyDate is a library that can generate an accurate date format from a simple se
 ## Installation
 
 **JavaScript**
-```HTML
-<script src='path/to/easydate.js'></script>
+```sh
+npm i @adeoladev/easydate
 ```
 **PHP** 
-```PHP
+```sh
 composer require adeoladev/easydate
 ```
 
 ## Usage
 
-**JavaScript**
 ```Javascript
-EDate('10 days ago').format('dmy');
-```
-**PHP**
-```PHP
-EDate('10 days ago','dmy');
+EDate('10 days ago','dmy','short');
 ```
 
-Supported sentences include any amount of days, weeks or months in the future and the past. Such as ``3 weeks ago`` or ``10 days from now``.
+Supported sentences include any amount of days, weeks or months in the future and the past. Such as ``3 weeks ago`` or ``10 days from now``. You can also use ``today`` to get the current date.
 
-Supported formats include any combination of date/month/year such as ``dmy`` or ``mdy``. It also supports ``seconds`` and ``unix``. You can only use seconds for future dates.
+Supported formats include any combination of day/month/year such as ``dmy`` or ``mdy``. And you can display it in either ``short`` or ``long`` form.
 
 ## License
-MIT. Copyright (c) 2022 Adeola Boye.
+MIT. Copyright (c) 2021 Adeola Boye.
