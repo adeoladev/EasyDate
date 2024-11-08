@@ -1,10 +1,10 @@
-function EDate(param,theformat,type) {
+export const EDate = (param,theformat,type) => {
 
-        filter = param.split(' ');
-        filter2 = parseInt(filter[0]);
-        date = new Date();
-        format = /[^dmy]/;
-        myArr = theformat.split("");
+        var filter = param.split(' ');
+        var filter2 = parseInt(filter[0]);
+        var date = new Date();
+        var format = /[^dmy]/;
+        var myArr = theformat.split("");
 
         if ((!filter2 && param !== 'today') || theformat == null || type == null || format.test(theformat) == true || myArr.length > 3) {
           return "Error. Incorrect Format.";
@@ -50,7 +50,7 @@ function EDate(param,theformat,type) {
 
          if (type && type == 'long') {
           const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-          Arr2 = theformat.split("");
+          var Arr2 = theformat.split("");
           var monthKey = Arr2.indexOf("m");
           var dayKey = Arr2.indexOf("d");
           var yearKey = Arr2.indexOf("y");
@@ -72,3 +72,5 @@ function EDate(param,theformat,type) {
        return param;  
 
 }
+
+export default EDate;

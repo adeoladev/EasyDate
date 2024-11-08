@@ -1,6 +1,6 @@
 {
   "name": "@adeoladev/easydate",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A library that can generate an accurate date format from a simple sentence.",
   "main": "easydate.js",
   "scripts": {
